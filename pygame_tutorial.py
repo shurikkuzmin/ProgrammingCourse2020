@@ -11,7 +11,7 @@ pygame.init()
 
 SURFACE = pygame.display.set_mode((800,600), 0, 32)
 
-ded_moroz = pygame.image.load("ded_moroz.png")
+ded_moroz = pygame.image.load("santa_claus.png").convert_alpha()
 ded_moroz = pygame.transform.scale(ded_moroz, (100, 100))
 
 miami = pygame.image.load("miami.jpg")
