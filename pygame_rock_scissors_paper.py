@@ -21,6 +21,8 @@ BLACK = (0, 0, 0)
 myfont = pygame.font.SysFont("Comic Sans MS", 30)
 text = myfont.render("What is your choice?", False, BLUE)
 
+mainImage = pygame.image.load("rock_scissors_paper.png")
+
 isRunning = True
 while isRunning:
     SURFACE.fill(WHITE)
@@ -30,6 +32,7 @@ while isRunning:
             isRunning = False
          
     SURFACE.blit(text, (50,50))
+    SURFACE.blit(mainImage, (100, 100))
     pygame.display.update()
     
 pygame.quit()
